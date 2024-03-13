@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f0f0f0;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.main-container {
+  background-color: white;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+  width: 40%;
+  padding: 0;
+  margin: 2% 1.5%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftPanel {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+.leftPanel h2,h4{
+  color: saddlebrown;
+}
+.header{
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+.header h4{
+  font-size: 16px;
+  font-weight: bold;
+  color: saddlebrown;
+}
+.contactbox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contactbox .icon {
+  border-radius: 2rem;
+  padding: 6px 4px;
+  border: 4px solid saddlebrown;
+  color: saddlebrown;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.contactbox .contact-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 4%;
+  gap: 8%;
+
+}
+.profile {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.profile h2 {
+  font-size: 18px;
+}
+
+.profile .description>:nth-child(1) {
+  margin-top: 3%;
+}
+.workExperience {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.workExperience ul{
+  list-style: none;
+  color: saddlebrown;
+}
+.workExperience h2 {
+  font-size: 18px;
+  margin-bottom: 3%
+}
+.list1 li p:nth-child(1) {
+  font-weight: bold;
+  color: saddlebrown;
+}
+
+.list1 li p:nth-child(2) {
+  color: saddlebrown;
+  
+}
+
+.list1 li p:nth-child(3) {
+  color: black;
+  font-size: 16px;
+}
+.rightPanel {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.referencehead {
+  margin-bottom: 3%;
+}
+.referencehead h2 {
+  font-size: 18px;
+}
+
+.details h2:nth-child(1) {
+  margin-top: 2rem;
+}
+
+.details h2 {
+  color: saddlebrown;
+  font-size: 18px;
+}
+
+.reference {
+  display: flex;
+  flex-direction: row;
+
+}
+.reference .sectionline{
+  border-right: 4px solid saddlebrown;margin-left: 7%;margin-right: 2px;
+}
+.sectionline .smallText {
+  margin-right: 1rem;
+}
+
+.reference .smallText{
+  margin-left: 7%; margin-bottom: 3%;
+}
+
+.rightPanel .details {
+  display: flex;
+  flex-direction: column;
+}
+.rightPanel img {
+  width: 2cm;
+  height: 2cm;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  }
+.rightPanel .Education ul li { 
+  list-style: none;
+  margin-left: 1.7rem;
+}
+
+.rightPanel h2 {
+  margin-top: 2rem; 
+  margin-bottom: 0.5rem; 
+  margin-left: 1.5rem
+}; 
+
+.Education {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.Education p:nth-child(3) {
+  font-weight: bold;
+}
+
+.Education p {
+  font-size: 14PX;
+}
+#list2 li p:nth-child(1) {
+  font-weight: bold;
+  color: saddlebrown;
+}
+
+#list2 li p:nth-child(2)
+#list2 li p:nth-child(3) {
+  color: black;
+}
+    .languages {
+      margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+.languages .languagelist ul li{
+  margin-left: 2.5rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.skills .skilllist li{
+  margin-left:2.5rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+.skilllist .languagelist li::marker{
+  color: saddlebrown;
+}
+
+
+@media screen and (min-width:900px) and (max-width:1000px) {
+  .a4-page {
+    background-color: white;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+    width: 60%;
+    padding: 0;
+    margin: 10% 1.5%;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width:670px) and (max-width:990px) {
+  .a4-page {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 670px) {
+  .a4-page {
+      width: 100%; 
+      height: 95vh;
+  }
+.container{
+  height: 95vh;
+}
+
+  .leftPanel {
+      width: 70%;
+  }
+
+  .rightPanel {
+      width: 30%;
+      margin-top: 1rem;
+  }
+
+  .rightPanel h2,
+  .rightPanel h4,
+  .rightPanel p {
+      margin-top: 0.3rem; 
+      margin-bottom: 0.3rem;
+  }
+
+}
